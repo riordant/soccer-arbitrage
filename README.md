@@ -10,7 +10,7 @@ The project mainly scrapes from HTML sites, or where available, directly from th
 
   Selenium WebDriver/PhantomJS - Browser & Webpage Automation
 
-  fuzzywuzzy - event comparison (using Fuzzy Logic)
+  fuzzywuzzy - Event Comparison (using Fuzzy Logic)
 
 
 Unfinished. 
