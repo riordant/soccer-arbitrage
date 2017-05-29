@@ -1,0 +1,17 @@
+rules:
+
+    Woman's games: process client side. if game found, remove woman string section, pass "WOMEN" as special, search without, and append after.
+    Reserves: process client side: replace with "Res.". no need to pass as special
+    underage: same as woman's.
+    
+soccerway doesn't have EVERYTHING - ie. the lowest level of the norwegian league (prob equivalent to Crossabeg in fairness).
+in the future you could optimise the search so that when nothing is returned to try other search sites, eg fussball wettpoint contains
+a lot of lower leagues.
+
+right so what needs to be done -
+    implement extra part of google package (ie. add support for "fussball wettpoint" results)
+    remove SC/FC/CD from searches.
+    implement the function with each bookie - observe specials in each, process, and make the query
+    
+    
+    

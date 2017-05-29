@@ -1,0 +1,24 @@
+http://sports.titanbet.co.uk/en/e/2538968/Sumqayit-v-FK-Qabala?use_flash=N
+
+- search full match with date as follows: D M* YYYY and soccerway
+- get each result in turn
+- split title by " - "
+- cycle through each part of that list
+- get first element that contains " vs. " or " vs "
+- break.
+
+- I think if it's a live game you gave to get it from the body of the first result with "2:00".
+
+- ok so soccerportal does not seem to have all games.
+- store the site you got it from (as "source") and ensure that the other bookiematches have the same source.
+
+- if theres no soccerway results on the page - look for paddypower result. (I think this is just for certain in-play
+  games). get the title and split by " Betting Odds". store source as PP.
+  
+  MAKE SURE "vs." is in the query, not "v".
+  
+  
+For special games (not incl. underage) - search without special, then append whatever the special is after.
+
+
+

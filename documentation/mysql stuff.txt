@@ -1,0 +1,6 @@
+root@localhost: ,vxzNxp=Z3Dh
+
+after starting the server, the command to login is:
+mysql -u root -p
+and enter the password above.
+I'll look into changing this password later.

@@ -1,0 +1,53 @@
+24/1/16: got reacquainted with python to some degree.
+         ran willhill a couple of times. current problem is with the multithreading function.
+         changed "enumerate(times)" to just "times" in checkTimePresent. didn't make sense otherwise.
+         researched possible ways of running an offline html file for speed. possible to save one in Chrome,
+         with all information possibly, loading an offline page I haven't fully researched yet.
+         benefits of this are speed, the non-necessity of requesting the same site multiple times, and consistent/clear testing.
+         tomorrow?- finish research. fix multithreading problem. clean mid section of code into readable functions. finalise willhill.
+
+25/1/16: offline sites can be loaded; online is needed currently with William hill anyway for threads.
+         threading was actually working, the problem is most games have incorrect/inconsistent link data. 
+         'min' games are ok i think, live are not. will have to test min games later when there is one.
+         I will have to just get an estimate start time from the difference the current time and the game time, and then match
+         game times within a margin.
+         on the bright side, multithreading seems to work, and is pretty simple compared to java.
+         Getting the time of live games on program start-up is troublesome. if you consider that a game is at half time or
+         more, estimation of the start time of that game gets really difficult. best thing to do is simply ignore in-play games
+         on program start-up: remember all games gathered before becoming live will still be valid live.
+         could still estimate games before and after half time, but not during.
+         
+         ok implemented a way of getting a time in the live case. works fairly well. will have to make sure to get time within a
+         range. can't do any more tonight on willhill, no more games. offline html doesn't work really. tags change. 
+         
+         phantomjs in activity monitor: if i manually stop the programs execution it quits. if the program crashes it doesn't.
+         
+         tomorrow? finish titan code, begin debugging, sort phantomjs processes. begin a long term plan for this stuff.
+         
+
+26/1/16: sorted phantomjs processes: programatically dunno how to do it, but all you have to do is occasionally call "pgrep phantomjs | xargs kill"
+         in command line to quit all running phantomjs processes.
+         
+         fn+shift+3: #.
+         
+         to go up one level in console: cd ..
+         
+         what I have to add in for titan: - refreshing
+                                          - live games
+         and i just have to sort out debugging.
+         
+31/10/15: what I have to do add for intertops: - refreshing
+                                                 loading all valid matches
+                                                 timeout exceptions (if still a thing) - it's not
+
+9/2/15: had an issue in phantomjs for a couple of hours (with pinnacle) where the continue button couldn't be pressed.
+i assumed it was because i hadn't the same loop implemented as i had in java. turned out the window size was not set to 
+max dimensions; i was getting an ElementNotVisibleException, it could find the element but couldn't click on it.
+in future always set the window size which should avoid problems with clearly present elements.
+
+11/2/15: got the basic pinnacle implementation working - today table.
+                                                  
+         
+         
+         
+         

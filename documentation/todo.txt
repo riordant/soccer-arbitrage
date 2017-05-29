@@ -1,0 +1,27 @@
+setting up and writing to database tables for leagues
+porting access files to sql
+league functions.
+
+general - reading latest html file for each bookie.
+general - moving files over to SpiderOak and changing paths.
+general - remove anaconda, find faster replacement
+
+pinnacle - set up error checking - done
+pinnacle - refreshing page through button click
+
+intertops - test refresh - regular refresh works. possibly cookie setting still needed though..? - yep.
+intertops - test find_relevant_matches - done
+intertops - fix get leagues issue - done
+
+betsson - full implementation
+
+all bookies - live games
+all bookies - Shutdown hooks (cleanup)
+all bookies - locking
+all bookies - local/live choice of html file
+
+main - set up locks
+main - set up threads. threading class
+main - GUI - research setups.
+
+
